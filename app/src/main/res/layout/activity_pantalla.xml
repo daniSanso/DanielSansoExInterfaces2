@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.danielsanso.danielsansoexinterfaces.pantallaActivity"
+    android:id="@+id/draw">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/myswipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="54dp">
+
+
+
+            <FrameLayout
+                android:id="@+id/imageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/scrim_gradient2">
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/uni" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/scrim_gradient" />
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textTap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:text="The library"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textTap2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Dell 11 al 14 de Diciembre, en el campus de villaviciosa de odon, participa en el mercadillo Solidario de libros organizado por la biblioteca CRAI"
+        android:textColor="@color/secondaryText"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+        >
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/twitter"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/youtube"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/instagram"/>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
+
+
+                <!--esto sirve para poner una imagen circular-->
+                <!-- <com.mikhaellopez.circularimageview.CircularImageView
+                     android:layout_width="120dp"
+                     android:layout_height="120dp"
+                     android:layout_gravity="center"
+                     android:src="@drawable/flipper"
+                     app:civ_border_color="#F44336"
+                     app:civ_border_width="8dp"
+                     app:civ_shadow="true"
+                     app:civ_shadow_color="#0000"
+                     app:civ_shadow_radius="10" /> -->
+
+
+
+
+            </FrameLayout>
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
